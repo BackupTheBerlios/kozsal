@@ -1,4 +1,4 @@
-// @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/base/HibernateUtil.java,v 1.2 2004/04/09 14:40:38 obivatelj Exp $
+//	@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/base/HibernateUtil.java,v 1.3 2004/04/11 09:25:30 obivatelj Exp $
 
 package hr.gracilis.ks.base;
 

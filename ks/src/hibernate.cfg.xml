@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- //	@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hibernate.cfg.xml,v 1.2 2004/04/11 09:25:30 obivatelj Exp $ -->
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://hibernate.sourceforge.net/hibernate-configuration-2.0.dtd">
 
 <hibernate-configuration>
@@ -8,5 +9,7 @@
   	<property name="dialect">net.sf.hibernate.dialect.MckoiDialect</property>
   	
     <mapping resource="hr/gracilis/ks/hibernate/Customer.hbm.xml"/>
+    <mapping resource="hr/gracilis/ks/hibernate/User.hbm.xml"/>
+  	<mapping resource="hr/gracilis/ks/hibernate/Schedule.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- //	@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/hibernate/User.hbm.xml,v 1.1 2004/04/11 09:25:30 obivatelj Exp $ -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping schema="KS">
+	<class name="hr.gracilis.ks.hibernate.User" table="USER">
+		<id name="useId" column="USE_ID">
+			<generator class="native" />
+		</id>
+		
+		<property name="userName" column="USER_NAME" type="string" length="65" not-null="true" unique="true" />
+		
+		<set name="schedCustomers" lazy="true" inverse="true">
+			<key column="CUS_ID" />
+			<one-to-many class="hr.gracilis.ks.hibernate.Schedule"/>
+		</set>
+		
+		<set name="schedEmployees" lazy="true" inverse="true">
+			<key column="EMP_ID" />
+			<one-to-many class="hr.gracilis.ks.hibernate.Schedule"/>
+		</set>
+	</class>
+</hibernate-mapping>
