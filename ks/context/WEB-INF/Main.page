@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Main.page,v 1.5 2004/04/13 22:53:53 obivatelj Exp $ -->
+<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Main.page,v 1.6 2004/04/14 22:26:00 obivatelj Exp $ -->
 <!DOCTYPE page-specification
       PUBLIC "-//Apache Software Foundation//Tapestry Specification 3.0//EN"
       "http://jakarta.apache.org/tapestry/dtd/Tapestry_3_0.dtd">
@@ -18,12 +18,12 @@
         <binding name="class" expression="poljeACSS"/>
     </component>
     
-	<property-specification name="poljeA" type="java.lang.String"/>
-    <property-specification name="poljeAMsg" type="java.lang.String"/>
-  	<property-specification name="testB" type="java.lang.String"/>
+	<property-specification name="poljeA" type="java.lang.String" />
+    <property-specification name="poljeAMsg" type="java.lang.String" />
+  	<property-specification name="testB" type="java.lang.String" />
     <property-specification name="testD" type="java.util.Date" />
-    <property-specification name="hasValidationError" type="boolean"/>
-    <property-specification name="poljeACSS" type="java.lang.String"/>
+    <property-specification name="hasValidationError" type="boolean" />
+    <property-specification name="poljeACSS" type="java.lang.String" />
    
-    <context-asset name="warning" path="/img/warning.gif"/>
+    <context-asset name="warning" path="/img/warning.gif" />
 </page-specification>
