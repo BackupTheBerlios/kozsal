@@ -5,6 +5,7 @@ BODY, P, H1, H2, H3, TABLE, TD, TH, UL, OL, TEXTAREA, INPUT {
 BODY {
 	margin-top: 4px;
 	margin-bottom: 0px;
+	font-size: 80%;
 }
 
 TABLE {
@@ -18,7 +19,6 @@ TABLE {
 .table1 {
 	BORDER-RIGHT: #000000 1px solid; 
 	BORDER-TOP: #000000 1px solid; 
-	BACKGROUND-IMAGE: none; 
 	BORDER-LEFT: #000000 1px solid; 
 	BORDER-BOTTOM: #000000 1px solid; 
 	BACKGROUND-COLOR: #767776
@@ -26,41 +26,36 @@ TABLE {
 
 .table1head1 {
 	PADDING-LEFT: 0.35em; 
+	font-size: 100%;
 	FONT-WEIGHT: bold; 
-	FONT-SIZE: 77%; 
-	BACKGROUND-IMAGE: none; 
 	COLOR: #ffffff; 
-	FONT-FAMILY: Arial,Helvetica, sans-serif; 
 	BACKGROUND-COLOR: #8691c7; 
 	TEXT-ALIGN: left
 }
 
 .table1body1 {
-	FONT-SIZE: 70%; 
 	BACKGROUND-IMAGE: none; 
-	FONT-FAMILY: Arial,Helvetica, sans-serif; 
-	BACKGROUND-COLOR: #f7f7f7
+	BACKGROUND-COLOR: #f7f7f7;
 }
 
 .table1foot1 {
 	PADDING-LEFT: 0px; 
-	FONT-WEIGHT: normal; 
-	BACKGROUND-IMAGE: none; COLOR: #000000; 
-	FONT-FAMILY: Arial,Helvetica, sans-serif; 
-	BACKGROUND-COLOR: #cccccc
+	COLOR: #000000; 
+	BACKGROUND-COLOR: #7691b3;
 }
 
 .button1 {
 	BORDER-RIGHT: #000000 1px outset; 
 	BORDER-TOP: #b1b1b1 1px outset; 
-	FONT-SIZE: 70%; 
 	MARGIN: 1px 2px; 
 	BORDER-LEFT: #b1b1b1 1px outset; 
 	BORDER-BOTTOM: #000000 1px outset; 
-	FONT-FAMILY: Arial,Helvetica, sans-serif; 
 	BACKGROUND-COLOR: #e2e2e2
+	font-size: 80%;
 }
 
-
+UL {
+	list-style-type: square;
+}
 
 
