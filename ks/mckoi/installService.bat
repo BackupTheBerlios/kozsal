@@ -1,0 +1,1 @@
+mckoi.exe -install Mckoi c:\j2sdk1.4.2\jre\bin\server\jvm.dll -Djava.class.path=c:\var\mckoi1.0.2\mckoidb.jar -start com.mckoi.runtime.McKoiDBMain -params -conf c:\var\mckoi1.0.2\db.conf -dbpath c:\var\mckoi1.0.2\data -stop com.mckoi.runtime.McKoiDBMain -params -shutdown dbadmin 1qayxsw2 -out c:\var\mckoi1.0.2\stdout.log -err c:\var\mckoi1.0.2\stderr.log -depends Tomcat5 -manual

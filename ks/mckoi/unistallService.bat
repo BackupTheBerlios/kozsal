@@ -1,0 +1,1 @@
+mckoi.exe -uninstall Mckoi 
