@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Main.page,v 1.6 2004/04/14 22:26:00 obivatelj Exp $ -->
+<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Main.page,v 1.7 2004/04/30 07:09:24 obivatelj Exp $ -->
 <!DOCTYPE page-specification
       PUBLIC "-//Apache Software Foundation//Tapestry Specification 3.0//EN"
       "http://jakarta.apache.org/tapestry/dtd/Tapestry_3_0.dtd">
@@ -16,6 +16,10 @@
     
     <component id="poljeA" type="TextField">
         <binding name="class" expression="poljeACSS"/>
+    </component>
+    
+    <component id="schedule" type="PageLink">
+        <static-binding name="page" value="Schedule"/>
     </component>
     
 	<property-specification name="poljeA" type="java.lang.String" />

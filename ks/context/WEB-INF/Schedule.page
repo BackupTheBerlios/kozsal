@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Schedule.page,v 1.1 2004/04/30 07:09:25 obivatelj Exp $ -->
+<!DOCTYPE page-specification PUBLIC "-//Apache Software Foundation//Tapestry Specification 3.0//EN"  "http://jakarta.apache.org/tapestry/dtd/Tapestry_3_0.dtd">
+
+<page-specification class="org.apache.tapestry.html.BasePage">
+    <component id="frame" type="Frame">
+		<static-binding name="title" value="Raspored" />
+	</component>
+</page-specification>
