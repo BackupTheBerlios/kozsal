@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Main.page,v 1.3 2004/04/12 20:41:18 obivatelj Exp $ -->
+<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Main.page,v 1.4 2004/04/12 20:42:12 obivatelj Exp $ -->
 <!DOCTYPE page-specification
       PUBLIC "-//Apache Software Foundation//Tapestry Specification 3.0//EN"
       "http://jakarta.apache.org/tapestry/dtd/Tapestry_3_0.dtd">
