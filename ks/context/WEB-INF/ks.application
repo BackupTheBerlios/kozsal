@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/ks.application,v 1.5 2004/04/14 22:26:00 obivatelj Exp $ -->
+<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/ks.application,v 1.6 2004/04/19 09:23:30 obivatelj Exp $ -->
 <!DOCTYPE application
       PUBLIC "-//Apache Software Foundation//Tapestry Specification 3.0//EN"
       "http://jakarta.apache.org/tapestry/dtd/Tapestry_3_0.dtd">
@@ -8,6 +8,7 @@
     <description>Kozmetički salon</description>
 
     <property name="org.apache.tapestry.visit-class">hr.gracilis.ks.base.Visit</property>
+    <property name="org.apache.tapestry.template-encoding">UTF-8</property>
     
     <page name="Home" specification-path="Home.page"/>
     
