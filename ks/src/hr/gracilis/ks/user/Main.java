@@ -1,3 +1,5 @@
+//	@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/user/Main.java,v 1.2 2004/04/09 14:40:38 obivatelj Exp $
+
 package hr.gracilis.ks.user;
 
 import java.util.Iterator;
@@ -16,7 +18,6 @@ public class Main extends SecurePage {
 		Visit visit=(Visit) getVisit();
 		
 		Session session=HibernateUtil.currentSession();
-			
 		Transaction transaction=session.beginTransaction();
 			
 		Query query=session.createQuery("from Customer");
@@ -31,7 +32,7 @@ public class Main extends SecurePage {
 			return "dohvatio iz baze";
 		}
 		
-		HibernateUtil.closeSession();
+		HibernateUtil.closeSession(true);
 		
 		return visit.isAuthenticated() + "";
 	}

@@ -1,3 +1,5 @@
+//	@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/hibernate/Customer.java,v 1.2 2004/04/09 14:40:38 obivatelj Exp $
+
 package hr.gracilis.ks.hibernate;
 
 import java.util.List;

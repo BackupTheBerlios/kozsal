@@ -1,3 +1,5 @@
+// @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/base/HibernateUtil.java,v 1.2 2004/04/09 14:40:38 obivatelj Exp $
+
 package hr.gracilis.ks.base;
 
 import net.sf.hibernate.HibernateException;
@@ -7,31 +9,38 @@ import net.sf.hibernate.cfg.Configuration;
 
 public class HibernateUtil {
     private static final SessionFactory sessionFactory;
-
+    public static final ThreadLocal session=new ThreadLocal();
+    
     static {
         try {
-            sessionFactory = new Configuration().configure().buildSessionFactory();
-        } catch (HibernateException ex) {
+            sessionFactory=new Configuration().configure().buildSessionFactory();
+        } catch(HibernateException ex) {
             throw new RuntimeException("Exception building SessionFactory: " + ex.getMessage());
         }
     }
 
-    public static final ThreadLocal session = new ThreadLocal();
-
     public static Session currentSession() throws HibernateException {
-        Session s = (Session) session.get();
+        Session s=(Session) session.get();
+        
         // Open a new Session, if this Thread has none yet
-        if (s == null) {
-            s = sessionFactory.openSession();
+        if(s==null) {
+            s=sessionFactory.openSession();
             session.set(s);
         }
+        
         return s;
     }
 
-    public static void closeSession() throws HibernateException {
-        Session s = (Session) session.get();
+    public static void closeSession(boolean toFlush) throws HibernateException {
+        Session s=(Session) session.get();
         session.set(null);
-        if (s != null)
-            s.close();
+        
+        if(s!=null) {
+        	if(toFlush) {
+        		s.flush();
+        	}
+        	
+        	s.close();
+        }
     }
 }
