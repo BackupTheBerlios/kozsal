@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://hibernate.sourceforge.net/hibernate-configuration-2.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+  	<property name="connection.datasource">java:comp/env/jdbc/ks</property>
+    <property name="show_sql">false</property>
+  	<property name="dialect">net.sf.hibernate.dialect.MckoiDialect</property>
+  	
+    <mapping resource="hr/gracilis/ks/hibernate/Customer.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

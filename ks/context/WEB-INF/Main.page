@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page-specification
+      PUBLIC "-//Apache Software Foundation//Tapestry Specification 3.0//EN"
+      "http://jakarta.apache.org/tapestry/dtd/Tapestry_3_0.dtd">
+
+<page-specification class="hr.gracilis.ks.user.Main">
+    
+    <component id="frame" type="Frame">
+		<static-binding name="title" value="Glavna stranica" />
+	</component>
+
+	<component id="name" type="InsertText">
+    	<binding name="value" expression="name"></binding>
+    </component>
+</page-specification>

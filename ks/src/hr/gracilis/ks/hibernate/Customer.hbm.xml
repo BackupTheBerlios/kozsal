@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping schema="KS">
+	<class name="hr.gracilis.ks.hibernate.Customer" table="CUSTOMER">
+		<id name="cusId" column="CUS_ID" type="long">
+			<generator class="native" />
+		</id>
+
+		<bag name="customerAdd" table="CUSTOMER_ADD">
+			<key column="CUS_ID" />
+			<element column="MISC" type="string" length="255" not-null="true" />
+		</bag>
+	</class> 
+</hibernate-mapping>
