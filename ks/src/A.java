@@ -1,3 +1,5 @@
+//@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/Attic/A.java,v 1.2 2004/04/11 09:25:30 obivatelj Exp $
+
 import java.io.File;
 
 import net.sf.hibernate.cfg.Configuration;
