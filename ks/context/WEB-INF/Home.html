@@ -1,12 +1,12 @@
-<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Home.html,v 1.2 2004/04/09 14:40:38 obivatelj Exp $ -->
+<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Home.html,v 1.3 2004/04/12 20:41:18 obivatelj Exp $ -->
 
 <html>
 	<body>
 		<h1>Prijava u aplikaciju</h1>
 		<span jwcid="@Conditional" condition="ognl:message">
-			<p><font color="red"><span jwcid="@Insert" value="ognl:message">Error Message</span></font>
+			<p><font color="red"><span jwcid="@Insert" value="ognl:message">Error Message</span></font></p>
 		</span>
-		<p>
+		<p />
 		<form jwcid="@Form" listener="ognl:listeners.login">
 			<table border="0">
 				<tr>

@@ -1,0 +1,8 @@
+BODY, P, H1, H2, H3, TABLE, TD, TH, UL, OL, TEXTAREA, INPUT {
+	font-family: verdana, helvetica, arial, sans-serif;
+}
+
+.error {
+	background-color: red;
+}
+

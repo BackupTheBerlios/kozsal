@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Main.page,v 1.2 2004/04/09 14:40:37 obivatelj Exp $ -->
+<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Main.page,v 1.3 2004/04/12 20:41:18 obivatelj Exp $ -->
 <!DOCTYPE page-specification
       PUBLIC "-//Apache Software Foundation//Tapestry Specification 3.0//EN"
       "http://jakarta.apache.org/tapestry/dtd/Tapestry_3_0.dtd">
@@ -13,4 +13,19 @@
 	<component id="name" type="InsertText">
     	<binding name="value" expression="name"></binding>
     </component>
+    
+    <component id="testE" type="Any">
+        <binding name="class" expression="testE"/>
+    </component>
+    
+    <component id="testE2" copy-of="testE"/>
+    
+    <component id="testF" type="TextField">
+        <binding name="class" expression="testE"/>
+    </component>
+    
+    <property-specification name="message" type="java.lang.String"/>
+	<property-specification name="testA" type="java.lang.String"/>
+  	<property-specification name="testB" type="java.lang.String"/>
+    <property-specification name="testD" type="java.util.Date" />
 </page-specification>

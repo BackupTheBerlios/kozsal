@@ -1,11 +1,11 @@
-//	@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/hibernate/Schedule.java,v 1.1 2004/04/11 09:25:30 obivatelj Exp $
+//	@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/hibernate/Schedule.java,v 1.2 2004/04/12 20:41:18 obivatelj Exp $
 
 package hr.gracilis.ks.hibernate;
 
 public class Schedule {
 	private Long schId=null;
-	private Long cusId=null;
-	private Long empId=null;
+	private User customer=null;
+	private User employee=null;
 	
 	public Long getSchId() {
 		return schId;
@@ -15,19 +15,19 @@ public class Schedule {
 		this.schId = schId;
 	}
 	
-	public Long getCusId() {
-		return cusId;
+	public User getCustomer() {
+		return customer;
 	}
 	
-	public void setCusId(Long cusId) {
-		this.cusId = cusId;
+	public void setCustomer(User customer) {
+		this.customer = customer;
 	}
 	
-	public Long getEmpId() {
-		return empId;
+	public User getEmployee() {
+		return employee;
 	}
 	
-	public void setEmpId(Long empId) {
-		this.empId = empId;
+	public void setEmployee(User employee) {
+		this.employee = employee;
 	}
 }

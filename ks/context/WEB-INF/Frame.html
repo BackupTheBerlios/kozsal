@@ -1,11 +1,11 @@
-<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Frame.html,v 1.3 2004/04/11 09:25:30 obivatelj Exp $ -->
+<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Frame.html,v 1.4 2004/04/12 20:41:18 obivatelj Exp $ -->
 
-<span jwcid="shell">
-<body jwcid="@Body">	
-	<span jwcid="@RenderBody"/>
+<span jwcid="shell" stylesheet="ognl:assets.stylesheet">
+	<body jwcid="@Body">	
+		<span jwcid="@RenderBody"/>
 	
-	<span jwcid="@Conditional" condition="ognl:isNotMemberUserRole('Admin')">
-		<span jwcid="inspector" />
-	</span>
-</body>
+		<span jwcid="@Conditional" condition="ognl:isNotMemberUserRole('Admin')">
+			<span jwcid="inspector" />
+		</span>
+	</body>
 </span>

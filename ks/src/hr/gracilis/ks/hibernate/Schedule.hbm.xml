@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- //	@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/hibernate/Schedule.hbm.xml,v 1.1 2004/04/11 09:25:30 obivatelj Exp $ -->
+<!-- //	@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/hibernate/Schedule.hbm.xml,v 1.2 2004/04/12 20:41:18 obivatelj Exp $ -->
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
 
 <hibernate-mapping schema="KS">
@@ -8,8 +8,8 @@
 			<generator class="native" />
 		</id>
 		
-		<many-to-one name="cusId" class="hr.gracilis.ks.hibernate.User" column="CUS_ID" not-null="true" />
-		<many-to-one name="empId" class="hr.gracilis.ks.hibernate.User" column="EMP_ID" not-null="false" />
+		<many-to-one name="customer" class="hr.gracilis.ks.hibernate.User" column="CUS_ID" not-null="true" />
+		<many-to-one name="employee" class="hr.gracilis.ks.hibernate.User" column="EMP_ID" not-null="false" />
 			
 	</class>
 </hibernate-mapping>

@@ -1,7 +1,6 @@
-//@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/KSSchemaExport.java,v 1.1 2004/04/11 09:27:47 obivatelj Exp $
+//@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/KSSchemaExport.java,v 1.2 2004/04/12 20:41:18 obivatelj Exp $
 
 import java.io.File;
-
 import net.sf.hibernate.cfg.Configuration;
 import net.sf.hibernate.tool.hbm2ddl.SchemaExport;
 
