@@ -1,4 +1,4 @@
-//	@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/user/Main.java,v 1.3 2004/04/12 20:41:18 obivatelj Exp $
+//	@(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/src/hr/gracilis/ks/user/Main.java,v 1.4 2004/04/13 22:53:53 obivatelj Exp $
 
 package hr.gracilis.ks.user;
 
@@ -15,10 +15,13 @@ import hr.gracilis.ks.base.SecurePage;
 import hr.gracilis.ks.base.Visit;
 
 public abstract class Main extends SecurePage {
-	public abstract String getTestA();
 	public abstract String getTestB();
-	public abstract void setMessage(String message);
 	public abstract Date getTestD();
+	public abstract String getPoljeA();
+	public abstract void setPoljeAMsg(String poljeAMsg);
+	public abstract String getPoljeAMsg();
+	public abstract void setHasValidationError(boolean hasValidationError);
+	public abstract void setPoljeACSS(String poljeACSS);
 	
 	public String getName() throws HibernateException {
 		Visit visit=(Visit) getVisit();
@@ -43,10 +46,16 @@ public abstract class Main extends SecurePage {
 	}
 	
 	public void formSubmit(IRequestCycle cycle) {
-		setMessage(getTestA() + "<br>" + getTestB() + "<br>" + getTestD());
-	}
-	
-	public String getTestE() {
-		return "error";
+		setHasValidationError(false);
+		setPoljeAMsg(null);
+		setPoljeACSS(null);
+		String poljeA=getPoljeA();
+		
+		if(poljeA==null || poljeA.length()<5) {
+			setHasValidationError(true);
+			setPoljeAMsg("Polje A mora biti duga\u010Dko najmanje 5 znakova.");
+			setPoljeACSS("error");
+			return;
+		}
 	}
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/ks.application,v 1.3 2004/04/12 20:42:12 obivatelj Exp $ -->
+<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/ks.application,v 1.4 2004/04/13 22:53:53 obivatelj Exp $ -->
 <!DOCTYPE application
       PUBLIC "-//Apache Software Foundation//Tapestry Specification 3.0//EN"
       "http://jakarta.apache.org/tapestry/dtd/Tapestry_3_0.dtd">
 
 <application name="ks" engine-class="org.apache.tapestry.engine.BaseEngine" >
-    <description>Kozmeticki salon</description>
+    <description>Kozmetički salon</description>
 
     <property name="org.apache.tapestry.visit-class">hr.gracilis.ks.base.Visit</property>
     

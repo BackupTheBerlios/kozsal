@@ -1,20 +1,30 @@
-<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Main.html,v 1.3 2004/04/12 20:41:18 obivatelj Exp $ -->
+<!-- @(#) $Header: /home/xubuntu/berlios_backup/github/tmp-cvs/kozsal/Repository/ks/context/WEB-INF/Main.html,v 1.4 2004/04/13 22:53:53 obivatelj Exp $ -->
 	
 <span jwcid="frame">
 		Ovo je logirana stranica.<br></br>
-		Ti si <span jwcid="name">userName</span>.
+		<p>Ti si <span jwcid="name">userName</span>.</p>
 		
-		<span jwcid="@Conditional" condition="ognl:message">
-			<p><font color="red"><span jwcid="@Insert" value="ognl:message" raw="true">Error Message</span></font></p>
+		<span jwcid="@Conditional" condition="ognl:hasValidationError">
+			<table border="1">
+				<tr>
+					<td>
+						<img jwcid="@Image" image="ognl:assets.warning" alt="error" width="42" height="41" />
+					</td>
+					<td>
+						<span jwcid="@Conditional" condition="ognl:poljeAMsg">
+							<span jwcid="@Insert" value="ognl:poljeAMsg" />
+						</span>
+					</td>
+				</tr>
+			</table>
 		</span>
 		
 		<form jwcid="@Form" listener="ognl:listeners.formSubmit">
 			<table border="0">
 				<tr>
-					<th>A:</th>    
+					<th>Polje A:</th>    
 					<td>
-						<!-- input type="text" jwcid="@TextField" value="ognl:testA" size="30"/ -->
-						<input jwcid="testF" type="text" size="30" maxlength="4" value="ognl:testA" />
+						<input jwcid="poljeA" type="text" size="30" maxlength="6" value="ognl:poljeA" />
 					</td>
 				</tr>
 				<tr>
